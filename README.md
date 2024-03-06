@@ -3,13 +3,13 @@ Official implementation of the paper "Revisiting Counterfactual Problems in Refe
 
 
 
-# Updates
+## Updates
 
 - [x] (2024/3/6) Release our C-REC datasets C-RefCOCO/+/g.
 
 
 
-# Datasets
+## Datasets
 
 **C-RefCOCO/+/g** are three fine-grained counterfactual referring expression comprehension (C-REC) datasets built on three REC benchmark datasets RefCOCO/+/g through our proposed CSG method.
 
@@ -31,7 +31,7 @@ The number of seven categories of attributes in *normal* samples are shown as fo
 
 
 
-## Instructions
+### Instructions
 
 1. Download [ms-coco train2014 images](https://pjreddie.com/projects/coco-mirror), where the images in our datasets are all from.
 2. Our datasets are in:
