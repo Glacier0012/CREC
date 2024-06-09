@@ -46,14 +46,19 @@ $ROOT/data
 
 3. Definitions of every term in json files: 
 
-- 'atts': attribute words
-- 'bbox': bounding box ([0,0,0,0] for counterfactual samples)
-- 'iid': image id (from ms-coco train2014)
-- 'refs': the original positive expression for both normal and counterfactual samples
-- 'cf_id': counterfactual polarity (**1: counterfactual; 0: normal**)
-- 'att_pos': position of attribute words (start from 0)
-- 'query': text query for this sample
-- 'neg': negative query for this sample (it would be the normal text for counterfactual sample; this is for contrastive loss calculation)
-- 'att_id': category of attribute word, from 1 to 7 (A1-A7)
+
+| item    | type | description                                                                                                       |
+| ------- | ---- | ----------------------------------------------------------------------------------------------------------------- |
+| atts    | str  | attribute words                                                                                                   |
+| bbox    | list | bounding box ([0,0,0,0] for counterfactual samples)                                                               |
+| iid     | int  | image id (from ms-coco train2014)                                                                                 |
+| refs    | str  | the original positive expression for both normal and counterfactual samples                                       |
+| cf_id   | int  | counterfactual polarity (**1: counterfactual; 0: normal**)                                                        |
+| att_pos | int  | position of attribute words (start from 0)                                                                        |
+| query   | str  | text query                                                                                                        |
+| neg     | str  | negative query (it would be the normal text for counterfactual samples; this is for contrastive loss calculation) |
+| att_id  | int  | category of attribute word, from 1 to 7 (A1-A7)                                                                   |
+
+
 
 
