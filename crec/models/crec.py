@@ -80,9 +80,8 @@ class CREC(nn.Module):
         
             logits = torch.bmm(f_v, f_t)
             logits = F.softmax(logits.view(bs, -1), dim=1)
-            cl_label = 1 - det_label[:, :, 4].view(-1)                  # cf_id=0 -> postive -> cl_label=1
-            cl_label = cl_label.to(torch.int64)
-        
+            cl_label = det_label[:, :, 4].view(-1).to(torch.int64)      # cf_id=0 -> 0th is postive
+
         # return
         if self.training:
             gamma_det = 1
